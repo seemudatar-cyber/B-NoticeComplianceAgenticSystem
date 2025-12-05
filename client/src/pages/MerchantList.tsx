@@ -57,10 +57,7 @@ export default function MerchantList() {
           <p className="text-muted-foreground mt-1">Manage merchant tax profiles and agent assignments.</p>
         </div>
         <div className="flex gap-3">
-          <Button>
-            <Bot className="mr-2 h-4 w-4" />
-            Assign Agent
-          </Button>
+          {/* Button removed as requested */}
         </div>
       </div>
 
