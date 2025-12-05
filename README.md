@@ -17,17 +17,25 @@ The strategic goal is to prototype an **"agenticized" solution** that autonomous
 
 ## 🤖 Functional Overview: What the App Does
 
-The prototype demonstrates a complete autonomous loop:
+The prototype demonstrates a complete autonomous loop, powered by a team of specialized agents:
 
-1.  **Proactive Identification (The Scanner):**
-    *   The Agent continuously monitors merchant profiles.
-    *   It flags accounts with W9 forms older than 3 years (the "At Risk" threshold).
-2.  **Autonomous Communication (The Communicator):**
-    *   The Agent automatically initiates contact with the merchant via email.
-    *   It explains the compliance risk clearly and provides a secure link to fix it.
-3.  **Intervention-Free Resolution (The Validator):**
-    *   The merchant uses a self-service portal to update their W9.
-    *   The Agent validates the data and updates the system status to "Compliant" instantly.
+### 🕵️ The Agentic Team
+This system is powered by a multi-agent architecture where specialized agents handle distinct parts of the compliance lifecycle:
+
+1.  **Agent A: The Scanner (Monitor)**
+    *   **Role:** Continuous surveillance of the merchant portfolio.
+    *   **Responsibility:** Detects W9 forms approaching expiration or already obsolete (3+ years old).
+    *   **Action:** Flags accounts as "At Risk" and triggers the outreach workflow.
+
+2.  **Agent B: The Communicator (Outreach)**
+    *   **Role:** External merchant communication.
+    *   **Responsibility:** Generates personalized, context-aware emails and handles follow-ups without human involvement.
+    *   **Action:** Sends the "Action Required" email with a secure link to the self-service portal.
+
+3.  **Agent C: The Validator (Resolution)**
+    *   **Role:** Compliance verification.
+    *   **Responsibility:** Validates incoming data from the portal and updates the system of record (SOR).
+    *   **Action:** Instantly changes merchant status from "At Risk" to "Compliant" upon successful form submission.
 
 ---
 
