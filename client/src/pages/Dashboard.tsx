@@ -61,7 +61,6 @@ export default function Dashboard() {
           <p className="text-muted-foreground mt-1">Real-time monitoring of W9 status and agent activities.</p>
         </div>
         <div className="flex gap-3">
-          <Button variant="outline">Export Report</Button>
           <Button 
             className="bg-primary hover:bg-primary/90 text-white"
             onClick={handleManualScan}

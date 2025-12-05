@@ -32,8 +32,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { name: "Dashboard", href: "/", icon: LayoutDashboard },
     { name: "Merchants", href: "/merchants", icon: Users },
     { name: "Agent Activity", href: "/agent", icon: Bot },
-    { name: "Risk Reports", href: "/reports", icon: ShieldAlert },
-    { name: "Settings", href: "/settings", icon: Settings },
   ];
 
   const SidebarContent = () => (

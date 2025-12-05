@@ -57,10 +57,6 @@ export default function MerchantList() {
           <p className="text-muted-foreground mt-1">Manage merchant tax profiles and agent assignments.</p>
         </div>
         <div className="flex gap-3">
-          <Button variant="outline">
-            <Download className="mr-2 h-4 w-4" />
-            Export CSV
-          </Button>
           <Button>
             <Bot className="mr-2 h-4 w-4" />
             Assign Agent
@@ -78,10 +74,10 @@ export default function MerchantList() {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
-        <Button variant="outline">
+        <Button variant="outline" className="cursor-not-allowed opacity-50">
           <Filter className="mr-2 h-4 w-4" />
           Filter
-        </Button>
+        </Button>>
       </div>
 
       <div className="bg-card rounded-lg border shadow-sm overflow-hidden">
