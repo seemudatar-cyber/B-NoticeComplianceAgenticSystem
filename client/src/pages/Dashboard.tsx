@@ -140,27 +140,6 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <Card className="col-span-1 lg:col-span-2 shadow-sm">
           <CardHeader>
-            <CardTitle>Agent Resolution Activity</CardTitle>
-            <CardDescription>Issues detected vs. automatically resolved this week</CardDescription>
-          </CardHeader>
-          <CardContent className="h-[300px]">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={activityData}>
-                <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                <XAxis dataKey="name" axisLine={false} tickLine={false} />
-                <YAxis axisLine={false} tickLine={false} />
-                <Tooltip 
-                  contentStyle={{ backgroundColor: 'var(--card)', borderRadius: '8px', border: '1px solid var(--border)' }}
-                />
-                <Bar dataKey="detected" fill="hsl(var(--muted-foreground))" radius={[4, 4, 0, 0]} name="Risk Detected" />
-                <Bar dataKey="resolved" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} name="Auto-Resolved" />
-              </BarChart>
-            </ResponsiveContainer>
-          </CardContent>
-        </Card>
-
-        <Card className="col-span-1 shadow-sm">
-          <CardHeader>
             <CardTitle>Risk Distribution</CardTitle>
             <CardDescription>Current portfolio health</CardDescription>
           </CardHeader>
