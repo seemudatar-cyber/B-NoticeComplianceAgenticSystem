@@ -42,7 +42,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <ShieldAlert className="h-5 w-5 text-white" />
           </div>
           <div>
-            <h1 className="text-lg font-heading font-bold leading-none">TaxGuard</h1>
+            <h1 className="text-lg font-heading font-bold leading-none">Merchant B-Notice Compliance Agent</h1>
             <span className="text-xs text-sidebar-foreground/60">Compliance Agent</span>
           </div>
         </div>

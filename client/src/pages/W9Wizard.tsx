@@ -88,7 +88,7 @@ export default function W9Wizard() {
       <div className="mb-8 text-center">
         <div className="flex items-center justify-center gap-2 mb-2">
           <ShieldCheck className="h-8 w-8 text-blue-600" />
-          <span className="text-2xl font-bold text-slate-900">TaxGuard Portal</span>
+          <span className="text-2xl font-bold text-slate-900">Merchant B-Notice Compliance Agent</span>
         </div>
         <p className="text-slate-500">Secure W9 Update Request</p>
       </div>
