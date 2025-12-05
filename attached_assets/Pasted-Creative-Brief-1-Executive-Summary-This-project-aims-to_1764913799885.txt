@@ -1,0 +1,71 @@
+Creative Brief
+
+ 
+
+1. Executive Summary
+
+This project aims to evolve an existing tax reporting solution, originally created within JP Morgan, into a proactive, agentic system. The current system reacts to IRS B-Notices by applying backup withholding to high-volume merchants with obsolete W9 forms. The strategic goal is to prototype an "agenticized" solution that autonomously identifies merchants with outdated W9s and facilitates the correction before an IRS B-Notice is issued, thereby preventing backup withholding and eliminating manual intervention for internal tax operations teams.
+
+ 
+
+2. Audience Analysis
+
+Primary Audience (External): Merchants
+
+ 
+ • Description: High-volume merchants who use the JP Morgan payments processing platform.
+ • Challenge: They are at risk of receiving an IRS B-Notice and subsequent backup withholding due to obsolete W9 tax forms in their account profiles.
+ • Goal: To be proactively notified and guided to update their W9 information easily, ensuring tax compliance and avoiding financial penalties.
+
+Secondary Audience (Internal): J.B. Morgan Chase Tax Ops Team
+
+ 
+ • Description: The internal team responsible for tax operations.
+ • Challenge: They manually handle the B-Notices issued by the IRS for merchants each year, which is a reactive and labor-intensive process.
+ • Goal: To reduce or eliminate the manual workload associated with B-Notice processing through an automated, proactive system.
+ 
+ 
+
+3. Strategic Recommendations
+
+The core strategy is to shift the solution from a reactive to a proactive, autonomous model. The prototype should focus on demonstrating the following agentic capabilities:
+
+ 
+ • Proactive Identification: Develop an agent that continuously monitors merchant profiles on the payments platform to detect obsolete or missing W9 forms before they are flagged by the IRS.
+ • Autonomous Communication: Design an agent that can automatically initiate contact with the identified merchants, clearly explaining the issue and the steps required to update their W9 form.
+ • Intervention-Free Resolution: Create a workflow where the agent facilitates the W9 update process seamlessly. The ultimate goal is to "fix the problem... without any intervention," potentially by guiding the merchant through an automated portal or, with permission, updating the information directly.
+ 
+ 
+
+4. Project Timeline
+
+This project is currently in the prototyping phase. There is no formal timeline; the immediate objective is to conceptualize and build a working prototype that demonstrates the feasibility of an agentic approach to W9 compliance.
+
+ 
+
+5. Resource Requirements
+
+ 
+ • Human Resources: The project creator is available to develop the prototype.
+ • Budget: No formal budget is allocated for this prototyping stage.
+ • Tools & Technology: A development environment capable of building and testing an agentic solution that can interact with mock user data and system profiles.
+ 
+ 
+
+6. Risk Assessment
+
+ 
+ • Technical Complexity: Creating a truly autonomous agent that can reliably identify issues, communicate with users, and resolve problems without "overengineering" presents a significant technical challenge.
+ • Merchant Adoption: Merchants may be hesitant to trust or interact with an automated agent regarding sensitive tax information. Communication must be clear, secure, and build confidence.
+ • Data Security & Compliance: Handling and updating sensitive tax information like W9 forms via an automated agent requires strict adherence to financial industry security protocols and data privacy regulations to protect merchant information.
+ 
+ 
+
+7. Success Framework
+
+Success for the prototype will be measured by its ability to execute a complete, proactive resolution cycle without human intervention.
+
+ 
+ • Primary Success Metric: The agent successfully identifies a merchant with an obsolete W9, notifies them, and facilitates the correction of the W9 form within the system before a B-Notice could be issued.
+ • Key Performance Indicator (KPI): A 100% autonomous workflow, from detection to resolution, for a test case.
+ • Qualitative Goal: The solution must demonstrate an elegant and efficient design that functions without requiring manual oversight or complex engineering. The ultimate measure is proving that the problem can be solved proactively through the agent.
