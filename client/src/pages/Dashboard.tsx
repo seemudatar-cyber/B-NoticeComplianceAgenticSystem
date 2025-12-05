@@ -138,7 +138,7 @@ export default function Dashboard() {
 
       {/* Charts Section */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <Card className="col-span-1 lg:col-span-2 shadow-sm">
+        <Card className="col-span-1 shadow-sm">
           <CardHeader>
             <CardTitle>Risk Distribution</CardTitle>
             <CardDescription>Current portfolio health</CardDescription>
@@ -173,57 +173,57 @@ export default function Dashboard() {
             </div>
           </CardContent>
         </Card>
-      </div>
 
-      {/* Recent Alerts Table */}
-      <Card className="shadow-sm">
-        <CardHeader className="flex flex-row items-center justify-between">
-          <div>
-            <CardTitle>Priority Alerts</CardTitle>
-            <CardDescription>High-value merchants requiring attention</CardDescription>
-          </div>
-          <Button variant="ghost" asChild>
-            <Link href="/merchants">View All</Link>
-          </Button>
-        </CardHeader>
-        <CardContent>
-          <div className="space-y-4">
-            {mockMerchants.filter(m => m.status !== 'Compliant').map((merchant) => (
-              <div key={merchant.id} className="flex items-center justify-between p-4 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
-                <div className="flex items-center gap-4">
-                  <div className={`h-10 w-10 rounded-full flex items-center justify-center ${
-                    merchant.status === 'Non-Compliant' ? 'bg-destructive/10 text-destructive' : 'bg-amber-500/10 text-amber-600'
-                  }`}>
-                    <ShieldAlert className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">{merchant.name}</h4>
-                    <p className="text-sm text-muted-foreground">Tax ID: {merchant.taxId}</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-6">
-                  <div className="text-right">
-                    <div className="text-sm font-medium">Risk Score</div>
-                    <div className={`text-sm font-bold ${
-                      merchant.riskScore > 80 ? 'text-destructive' : 'text-amber-600'
-                    }`}>{merchant.riskScore}/100</div>
+        {/* Recent Alerts Table */}
+        <Card className="shadow-sm col-span-1 lg:col-span-2">
+          <CardHeader className="flex flex-row items-center justify-between">
+            <div>
+              <CardTitle>Priority Alerts</CardTitle>
+              <CardDescription>High-value merchants requiring attention</CardDescription>
+            </div>
+            <Button variant="ghost" asChild>
+              <Link href="/merchants">View All</Link>
+            </Button>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              {mockMerchants.filter(m => m.status !== 'Compliant').map((merchant) => (
+                <div key={merchant.id} className="flex items-center justify-between p-4 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
+                  <div className="flex items-center gap-4">
+                    <div className={`h-10 w-10 rounded-full flex items-center justify-center ${
+                      merchant.status === 'Non-Compliant' ? 'bg-destructive/10 text-destructive' : 'bg-amber-500/10 text-amber-600'
+                    }`}>
+                      <ShieldAlert className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">{merchant.name}</h4>
+                      <p className="text-sm text-muted-foreground">Tax ID: {merchant.taxId}</p>
+                    </div>
                   </div>
                   
-                  <div className="text-right hidden md:block">
-                    <div className="text-sm font-medium">Agent Status</div>
-                    <div className="text-sm text-primary">{merchant.agentStatus}</div>
-                  </div>
+                  <div className="flex items-center gap-6">
+                    <div className="text-right">
+                      <div className="text-sm font-medium">Risk Score</div>
+                      <div className={`text-sm font-bold ${
+                        merchant.riskScore > 80 ? 'text-destructive' : 'text-amber-600'
+                      }`}>{merchant.riskScore}/100</div>
+                    </div>
+                    
+                    <div className="text-right hidden md:block">
+                      <div className="text-sm font-medium">Agent Status</div>
+                      <div className="text-sm text-primary">{merchant.agentStatus}</div>
+                    </div>
 
-                  <Button size="sm" variant="outline" asChild>
-                    <Link href={`/merchants/${merchant.id}`}>View Agent</Link>
-                  </Button>
+                    <Button size="sm" variant="outline" asChild>
+                      <Link href={`/merchants/${merchant.id}`}>View Agent</Link>
+                    </Button>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      </div>
     </div>
   );
 }
