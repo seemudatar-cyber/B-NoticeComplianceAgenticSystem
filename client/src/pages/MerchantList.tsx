@@ -77,7 +77,7 @@ export default function MerchantList() {
         <Button variant="outline" className="cursor-not-allowed opacity-50">
           <Filter className="mr-2 h-4 w-4" />
           Filter
-        </Button>>
+        </Button>
       </div>
 
       <div className="bg-card rounded-lg border shadow-sm overflow-hidden">
